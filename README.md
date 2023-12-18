@@ -16,9 +16,6 @@ A caching engine/server for the Star Wars API (SWAPI) that enhances the function
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -59,3 +56,33 @@ Create a `.env` file with the following variables:
 ```env
 PORT=4500
 MONGO_URL=mongodb://127.0.0.1:27017/swapi
+
+## Database Configuration
+
+Ensure MongoDB is installed and running. The connection string is specified in the .env file.
+
+## Running the Application
+
+npm start
+
+
+## API Endpoints
+
+Get All Starships
+Endpoint: /api/starships
+Method: GET
+Description: Get a list of all starships in the Star Wars universe.
+Parameters:
+search: Search for starships by name.
+sort: Sort starships by a specific attribute (e.g., name).
+Get Starship by ID
+Endpoint: /api/starships/:id
+Method: GET
+Description: Get details about a specific starship by providing its ID.
+Parameters:
+id: ID of the starship.
+
+## Testing
+
+npm test
+
